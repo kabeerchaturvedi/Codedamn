@@ -1,0 +1,11 @@
+const num = 3849;
+
+function reverseGivenInteger(num) {
+    // write your solution here
+
+const reveredNumber = num.toString().split('').reverse().join('');
+    return parseInt(reveredNumber)*Math.sign(num);
+    
+}
+
+console.log(`Reversed integer is: ${reverseGivenInteger(num)}`)
